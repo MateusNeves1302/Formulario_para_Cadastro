@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/x-icon">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="box">
+ <!-- <img src="./img/img.jpg" alt="tela"> -->
+    <form action="./formulario.php">
+      <fieldset>
+         <legend><strong>Formulário para Cadastro</strong></legend>
+         <br>
+          <div class="input-box">
+             <label for="name" class="labelInput">Nome Completo</label>
+             <input type="text" id="name" tabindex="1" class="inputUser" required checked placeholder="Digite seu nome completo">
+          </div><br>
+          <div class="input-box">
+             <label for="text" class="labelInput">Email</label>
+             <input type="text" id="email" tabindex="2" class="inputUser" required placeholder="@example.com.br">
+          </div><br><br>
+          <div class="input-box"> 
+             <label for="telefone" class="labelInput">Contato</label>
+             <input type="tel" id="telefone" tabindex="4" class="inputUser" required placeholder="(00)00000-0000">
+          </div><br>
+
+          <p>Sexo:</p>
+             <input type="radio" id="feminino" name="genero" value="feminino" required checked>
+             <label for="feminino">Feminino</label>
+             <br>
+             <input type="radio" id="masculino" name="genero" value="masculino" required>
+             <label for="masculino">Masculino</label>
+             <br>
+             <input type="radio" id="outro" name="genero" value="outro" required>
+             <label for="outro">Outro</label>
+             <br><br>
+             <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+             <input type="date" name="data_nascimento" id="data_nascimento" required>
+             <br><br>
+          <div class="campo">  
+             <label id="text" for="senioridade"><b>Nivel de experiencia:</b> </label><br><br>
+             <select id = " senioridade " required >
+               <option readonly  value = "" > Selecione </option>
+               <option> Júnior </option>
+               <option>  Pleno </option>
+               <option > Sênior </option>
+             </select >
+          </div>
+             <br><br>
+  
+            <label id="text2" for="stage-experiencia"><b>Qual lado da Aplicação você Desenvolve? </b></label><br><br>
+              <input type="radio" name="front" value="front-end" checked required>
+              <label for="front-end">Front-end</label>
+              <input type="radio"  name="back" value="back-end" required>
+              <label for="back-end">Back-end</label>
+              <input type="radio"  name="full" value="full-stack" required>
+              <label for="full-stack">Full-Stack</label>
+            <br><br>
+     
+             <label id="message-text">Mensagem:</label>
+             <textarea placeholder="Escreva aqui seu feedback" name="feedback" id="feedback" cols="40" rows="10"></textarea><br><br> 
+  
+           <input type="submit" name="submit" id="submit">
+      </fieldset>
+    </form>
+  </div>
+
+
+</body>
+</html>
