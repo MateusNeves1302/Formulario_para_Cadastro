@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2? family = Montserrat: wght @ 300 & família = Roboto: wght @ 300; 500 & display = swap');
 @import url('https://fonts.googleapis.com/css2? family = Mochiy + Pop + P + One & family = Montserrat: wght @ 300 & family = Roboto: wght @ 300; 500 & display = troca');
+@import url('https://fonts.googleapis.com/css2? family = Mochiy + Pop + P + One & family = Montserrat: wght @ 300 & family = Poppins: wght @ 300; 400 & family = Roboto: wght @ 300; 500 & display = swap ');
 
 
 body{
@@ -83,7 +84,7 @@ input::placeholder{
 }
 
 select, option {
-    color: black;
+    color: rgba(255, 255, 255, 0.945);
     padding: 6px;
     width: 40%;
     outline: none;
@@ -93,6 +94,12 @@ select, option {
     background: linear-gradient(to right, rgb(29, 18, 182), rgb(8, 163, 252));
     border: 1px rgb(29, 18, 182) solid;
 }
+
+.campo option{
+  background: rgba(11, 78, 223, 0.925) ;
+  font-family: 'Poppins', sans-serif;
+}
+
 
 
 #text{
@@ -157,6 +164,7 @@ textarea{
     background: linear-gradient(to left, rgb(10, 187, 241), rgb(24, 8, 252));
     color: rgb(0, 0, 0);
     outline: 1px solid gray;
+    cursor: pointer;
 }
 
 
